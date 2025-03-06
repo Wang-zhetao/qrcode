@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		346F755B2D78391A005DDE7F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 346F75342D7837B2005DDE7F /* CodeScanner */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		346F75022D774A58005DDE7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346F755B2D78391A005DDE7F /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = qr;
 			packageProductDependencies = (
+				346F75342D7837B2005DDE7F /* CodeScanner */,
 			);
 			productName = qr;
 			productReference = 346F74F12D774A57005DDE7F /* qr.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 346F74E82D774A57005DDE7F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				346F75332D7837B2005DDE7F /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 346F74F22D774A57005DDE7F /* Products */;
 			projectDirPath = "";
@@ -398,6 +407,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"qr/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用相机来扫描二维码";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +436,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"qr/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用相机来扫描二维码";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +563,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		346F75332D7837B2005DDE7F /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		346F75342D7837B2005DDE7F /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 346F75332D7837B2005DDE7F /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 346F74E92D774A57005DDE7F /* Project object */;
 }
